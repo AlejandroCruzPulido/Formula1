@@ -11,7 +11,7 @@ function Login() {
       <div className='Login-body'>
         <label>Email</label>
         <textarea className='Email'></textarea>
-        <p></p>
+        <br></br>
         <label>Password</label>
         <textarea className='Password'></textarea>
       </div>

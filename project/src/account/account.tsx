@@ -15,16 +15,16 @@ function Account() {
         <b>Personal Information</b>
         <label>Name:</label>
         <textarea className='Name'></textarea>
-        <p></p>
+        <br></br>
         <label>Surname:</label>
         <textarea className='Surname'></textarea>
-        <p></p>
+        <br></br>
         <label>Email:</label>
         <textarea className='Email'></textarea>
-        <p></p>
+        <br></br>
         <label>Password:</label>
         <textarea className='Password'></textarea>
-        <p></p>
+        <br></br>
         <a
           className="Logout-link"
           href="/login"

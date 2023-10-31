@@ -38,7 +38,7 @@ function Main() {
     </div>
     <div className='RedBull'>
       <div className='RedBull-left'>
-      <label>RedBull</label>
+      <label>Red Bull</label>
       <img src={redbull_logo} className='RedBull-logo' alt='redbull-logo'></img>
       </div>
       <div className='RedBull-right'>
