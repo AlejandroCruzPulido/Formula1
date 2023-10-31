@@ -1,0 +1,40 @@
+.Calendar{
+    text-align: center;
+  }
+  
+  .Calendar-logo{
+    height: 30vmin;
+    pointer-events: none;
+  }
+  
+  .Calendar-header{
+    background-color: white;
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: calc(10px + 2vmin);
+    color: black;
+  }
+  
+  .Calendar-body{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: calc(10px + 2vmin);
+    color: black;
+    margin-top: 10em;
+    margin-bottom: 2em;
+  }
+  
+  .Calendar-footer{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: calc(10px + 2vmin);
+    color: black;
+  }
+  
+  

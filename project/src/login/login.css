@@ -1,0 +1,59 @@
+.Login{
+    text-align: center;
+  }
+  
+  .Login-logo{
+    height: 30vmin;
+    pointer-events: none;
+  }
+  
+  .Login-header{
+    background-color: white;
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: calc(10px + 2vmin);
+    color: black;
+  }
+  
+  .Login-link{
+    margin-bottom: 2em;
+    color: #FF4D4F;
+  }
+  
+  .SignUp-link{
+    color: #FF4D4F;
+  }
+  
+  .Email{
+    background-color: grey;
+    color: white; 
+  }
+  
+  .Password{
+    background-color: grey;
+    color: white;
+  }
+  
+  .Login-body{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: calc(10px + 2vmin);
+    color: black;
+    margin-top: 10em;
+    margin-bottom: 10em;
+  }
+  
+  .Login-footer{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: calc(10px + 2vmin);
+    color: black;
+  }
+  
+  

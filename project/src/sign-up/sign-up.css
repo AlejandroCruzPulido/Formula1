@@ -1,0 +1,69 @@
+.SignUp{
+  text-align: center;
+}
+
+.SignUp-logo{
+  height: 30vmin;
+  pointer-events: none;
+}
+
+.SignUp-header{
+  background-color: white;
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.SignUp-link{
+  color: #FF4D4F;
+}
+
+.Name{
+  background-color: grey;
+  color: white; 
+}
+
+.SurName{
+  background-color: grey;
+  color: white; 
+}
+
+.RepeatPassword{
+  background-color: grey;
+  color: white; 
+}
+
+.Email{
+  background-color: grey;
+  color: white; 
+}
+
+.Password{
+  background-color: grey;
+  color: white;
+}
+
+.SignUp-body{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+  margin-top: 3em;
+  margin-bottom: 5em;
+}
+
+.SignUp-footer{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2em;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+

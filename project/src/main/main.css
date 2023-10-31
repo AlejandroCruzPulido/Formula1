@@ -1,0 +1,144 @@
+.Main{
+    text-align: center;
+  }
+  
+  .Main-logo{
+    height: 30vmin;
+    pointer-events: none;
+  }
+  
+  .Main-header{
+    background-color: white;
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: calc(10px + 2vmin);
+    color: black;
+  }
+  
+  .Main-body{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    margin-top: 2em;
+    padding-bottom: 2em;
+  }
+
+  .Footer{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  
+  .Main-footer{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .Ferrari{
+    background-color: crimson;
+    display: flex;
+    width: 20em;
+    height: 7em;
+  }
+
+  .Ferrari-logo{
+    width: 5em;
+    height: 4em;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5em;
+  }
+
+  .Ferrari-left{
+    margin-right: 2em;
+    margin-left: 2em;
+  }
+
+  .Ferrari-right{
+    margin-top: 1.2em;
+  }
+    
+  .AstonMartin{
+    background-color: teal;
+    display: flex;
+    margin-top: 1em;
+    width: 20em;
+    height: 7em;
+  }
+
+  .AstonMartin-logo{
+    width: 5em;
+    height: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .AstonMartin-left{
+    margin-right: 2em;
+    margin-left: 2em;
+  }
+
+  .AstonMartin-right{
+    margin-top: 1.2em;
+  }
+
+  .RedBull{
+    background-color: midnightblue;
+    display: flex;
+    margin-top: 1em;
+    width: 20em;
+    height: 7em;
+  }
+
+  .RedBull-logo{
+    width: 5em;
+    height: 5em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .RedBull-left{
+    margin-right: 2em;
+    margin-left: 2em;
+  }
+
+  .RedBull-right{
+    margin-top: 1.2em;
+  }
+
+  .Mercedes{
+    background-color: turquoise;
+    display: flex;
+    margin-top: 1em;
+    width: 20em;
+    height: 7em;
+    margin-bottom: 1em;
+  }
+
+  .Mercedes-logo{
+    margin-top: 1em;
+    width: 5em;
+    height: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .Mercedes-left{
+    margin-right: 2em;
+    margin-left: 2em;
+  }
+
+  .Mercedes-right{
+    margin-top: 1.3em;
+  }
