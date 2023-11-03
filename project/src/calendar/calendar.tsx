@@ -11,8 +11,8 @@ function MyCalendar() {
   const events = [
     {
       title: 'Recordatorio 1',
-      start: new Date(2023, 10, 10, 10, 0), // Año, Mes (0-11), Día, Hora, Minuto
-      end: new Date(2023, 10, 10, 12, 0), // Fin del evento
+      start: new Date(2023, 10, 10, 10, 0), 
+      end: new Date(2023, 10, 10, 12, 0), 
     },
     {
       title: 'Recordatorio 2',
@@ -33,7 +33,7 @@ function MyCalendar() {
           events={events}
           startAccessor="start"
           endAccessor="end"
-          style={{ height: 500 }} // Puedes ajustar la altura del calendario
+          style={{ height: 500 }} 
         />
       </div>
 

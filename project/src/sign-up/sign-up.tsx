@@ -48,11 +48,9 @@ function SignUp() {
     }
 
     if (errors.length === 0) {
-      // Guardar la información de la cuenta en el localStorage
       localStorage.setItem('accountCreated', 'true');
       localStorage.setItem('username', email);
       localStorage.setItem('password', password);
-      // Redirigir al usuario a la página "main"
       window.location.href = '/main';
     }
   };

@@ -3,7 +3,6 @@ import logo from '../images/f1-logo-2.jpg';
 import './account.css';
 
 function Account() {
-  // Obtener los datos del localStorage
   const savedName = localStorage.getItem('name') || '';
   const savedSurname = localStorage.getItem('surname') || '';
   const savedEmail = localStorage.getItem('email') || '';
@@ -25,7 +24,7 @@ function Account() {
             type="text"
             className='Name'
             value={savedName}
-            readOnly // Esto evita que el usuario edite el valor directamente
+            readOnly 
           />
           <br></br>
           <label>Surname:</label>

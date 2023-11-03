@@ -31,7 +31,6 @@ function Login() {
       return;
     }
 
-    // Autenticación exitosa: redirige al usuario a la página "main"
     window.location.href = '/main';
   };
 
