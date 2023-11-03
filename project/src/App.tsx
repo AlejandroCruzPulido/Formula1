@@ -4,7 +4,8 @@ import Login from './login/login';
 import SignUp from './sign-up/sign-up';
 import Main from './main/main';
 import Account from './account/account';
-import { Calendar } from 'react-ionicons';
+import Calendar from './calendar/calendar';
+import Bets from './bets/bets';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route path="/main" element={<Main />}/> 
       <Route path="/account" element={<Account />}/>
       <Route path="/calendar" element={<Calendar />}/> 
+      <Route path="/bets" element={<Bets />}/> 
     </Routes>
   </BrowserRouter>
   </>

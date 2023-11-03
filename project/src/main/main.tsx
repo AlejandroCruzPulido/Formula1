@@ -63,7 +63,7 @@ function Main() {
    <footer className='Footer' >
     <div className='Main-footer'>
 
-    <a href=' '>
+    <a href='/bets'>
         <Cash
             color={'#FFFFFF'}
             height="2em"

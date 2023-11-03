@@ -3,6 +3,12 @@ import logo from '../images/f1-logo-2.jpg';
 import './account.css';
 
 function Account() {
+  // Obtener los datos del localStorage
+  const savedName = localStorage.getItem('name') || '';
+  const savedSurname = localStorage.getItem('surname') || '';
+  const savedEmail = localStorage.getItem('email') || '';
+  const savedPassword = localStorage.getItem('password') || '';
+
   return (
     <div className="Account">
       <header className="Account-header">
@@ -13,25 +19,47 @@ function Account() {
         <img src='' className='Image-account' alt=""/>
 
         <b>Personal Information</b>
-        <label>Name:</label>
-        <textarea className='Name'></textarea>
-        <br></br>
-        <label>Surname:</label>
-        <textarea className='Surname'></textarea>
-        <br></br>
-        <label>Email:</label>
-        <textarea className='Email'></textarea>
-        <br></br>
-        <label>Password:</label>
-        <textarea className='Password'></textarea>
-        <br></br>
-        <a
-          className="Logout-link"
-          href="/login"
-          rel="noopener noreferrer"
-        >
-          Logout
-        </a>
+        <form>
+          <label>Name:</label>
+          <input
+            type="text"
+            className='Name'
+            value={savedName}
+            readOnly // Esto evita que el usuario edite el valor directamente
+          />
+          <br></br>
+          <label>Surname:</label>
+          <input
+            type="text"
+            className='Surname'
+            value={savedSurname}
+            readOnly
+          />
+          <br></br>
+          <label>Email:</label>
+          <input
+            type="text"
+            className='Email'
+            value={savedEmail}
+            readOnly
+          />
+          <br></br>
+          <label>Password:</label>
+          <input
+            type="password"
+            className='Password'
+            value={savedPassword}
+            readOnly
+          />
+          <br></br>
+          <a
+            className="Logout-link"
+            href="/login"
+            rel="noopener noreferrer"
+          >
+            Logout
+          </a>
+        </form>
       </div>
 
       <footer className='Footer' >
