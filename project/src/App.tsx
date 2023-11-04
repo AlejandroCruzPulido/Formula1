@@ -6,6 +6,7 @@ import Main from './main/main';
 import Account from './account/account';
 import Calendar from './calendar/calendar';
 import Bets from './bets/bets';
+import Chat from './chat/chat';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Route path="/account" element={<Account />}/>
       <Route path="/calendar" element={<Calendar />}/> 
       <Route path="/bets" element={<Bets />}/> 
+      <Route path="/chat" element={<Chat />}/> 
     </Routes>
   </BrowserRouter>
   </>
