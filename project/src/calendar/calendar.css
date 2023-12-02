@@ -1,5 +1,8 @@
 .Calendar{
     text-align: center;
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-bottom: 4em;
   }
   
   .Calendar-logo{
@@ -24,8 +27,8 @@
     align-items: center;
     font-size: calc(10px + 2vmin);
     color: black;
-    margin-top: 10em;
-    margin-bottom: 2em;
+    margin-top: 2em;
+    margin-bottom: 4em;
   }
   
   .Calendar-footer{
@@ -37,4 +40,9 @@
     color: black;
   }
   
-  
+@media screen and (max-width: 600px) {
+  .Calendar-body {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+} 

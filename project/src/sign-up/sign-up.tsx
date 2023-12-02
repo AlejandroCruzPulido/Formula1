@@ -12,7 +12,7 @@ function SignUp() {
 
   const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
-    if (/^[A-Z][a-z]*$/.test(value) || value === '') {
+    if (/^[A-Za-z]+(?:[A-Za-z]*[a-z]*)?$/.test(value) || value === '') {
       setName(value);
       localStorage.setItem('name', value);
     }
@@ -20,12 +20,11 @@ function SignUp() {
   
   const handleSurNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
-    if (/^[A-Z][a-z]*$/.test(value) || value === '') {
+    if (/^[A-Za-z]+(?:[A-Za-z]*[a-z]*)?$/.test(value) || value === '') {
       setSurName(value);
       localStorage.setItem('surname', value);
     }
-  };
-  
+  };  
 
   const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setEmail(e.target.value);
@@ -42,13 +41,15 @@ function SignUp() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const errors: string[] = [];
-
+  
     if (password !== repeatPassword) {
       errors.push('Las contraseñas no coinciden');
     }
-
+  
     if (errors.length === 0) {
       localStorage.setItem('accountCreated', 'true');
+      localStorage.setItem('name', name);  
+      localStorage.setItem('surname', surName);  
       localStorage.setItem('username', email);
       localStorage.setItem('password', password);
       window.location.href = '/main';

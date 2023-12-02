@@ -24,8 +24,8 @@
     align-items: center;
     font-size: calc(10px + 2vmin);
     color: black;
-    margin-top: 10em;
-    margin-bottom: 2em;
+    margin-top: 2em;
+    margin-bottom: 4em;
   }
   
   .Live-footer{
@@ -36,5 +36,28 @@
     font-size: calc(10px + 2vmin);
     color: black;
   }
+
+  .Live-Photo{
+    width: 20em;
+    height: 20em;
+  }
   
-  
+@media screen and (max-width: 600px) {
+  .Live-body {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  .Live-Photo {
+    width: 15em;
+    height: 15em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .Live-Photo {
+    width: 10em;
+    height: 10em;
+  }
+}

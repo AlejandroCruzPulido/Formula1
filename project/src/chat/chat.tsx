@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Cash, CalendarClear, Person, Car } from 'react-ionicons';
+import { Cash, Videocam, CalendarClear, Person, Car } from 'react-ionicons';
 import logo from '../images/f1-logo-2.jpg';
 import './chat.css';
 
@@ -9,11 +9,12 @@ function Chat() {
   const [user, setUser] = useState<string>('');
 
   useEffect(() => {
-    const storedUser = localStorage.getItem('username');
-    if (storedUser) {
-      setUser(storedUser);
+    const storedName = localStorage.getItem('name');
+    const storedSurname = localStorage.getItem('surname');
+    if (storedName && storedSurname) {
+      setUser(`${storedName} ${storedSurname}`);
     }
-
+  
     const storedMessages = localStorage.getItem('chatMessages');
     if (storedMessages) {
       setMessages(JSON.parse(storedMessages));
@@ -68,21 +69,20 @@ function Chat() {
           <a href='/bets'>
             <Cash color={'#FFFFFF'} height="2em" />
           </a>
-          <a href=' '>
+          <a href='/calendar'>
             <CalendarClear color={'#FFFFFF'} />
           </a>
-          <a href=' '>
+          <a href='/main'>
             <Car color={'#FFFFFF'} />
           </a>
           <a href='/account'>
             <Person color={'#FFFFFF'} />
           </a>
+          <a href="/live">
+            <Videocam color={'#FFFFFF'} />
+          </a>
         </div>
       </footer>
-
-      <div className="chat-button">
-        <button>Chat</button>
-      </div>
     </div>
   );
 }

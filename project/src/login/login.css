@@ -1,58 +1,70 @@
-.Login{
-    text-align: center;
+.Login {
+  text-align: center;
+}
+
+.Login-logo {
+  height: 30vmin;
+  pointer-events: none;
+}
+
+.Login-header {
+  background-color: white;
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.Login-link {
+  margin-bottom: 2em;
+  color: #FF4D4F;
+}
+
+.SignUp-link {
+  color: #FF4D4F;
+}
+
+.Email,
+.Password {
+  background-color: grey;
+  color: white;
+}
+
+.Login-body {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+  margin-top: 10em;
+  margin-bottom: 10em;
+}
+
+.ErrorMessage {
+  color: #FF4D4F;
+}
+
+/* Media Queries */
+@media screen and (max-width: 600px) {
+  .Login-logo {
+    height: 20vmin;
   }
-  
-  .Login-logo{
-    height: 30vmin;
-    pointer-events: none;
+
+  .Login-header {
+    margin-top: 1em;
   }
-  
-  .Login-header{
-    background-color: white;
-    margin-top: 3em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: calc(10px + 2vmin);
-    color: black;
+
+  .Login-body {
+    margin-top: 5em;
+    margin-bottom: 5em;
   }
-  
-  .Login-link{
-    margin-bottom: 2em;
-    color: #FF4D4F;
+}
+
+@media screen and (max-width: 480px) {
+  .Login-logo {
+    height: 15vmin;
   }
-  
-  .SignUp-link{
-    color: #FF4D4F;
-  }
-  
-  .Email{
-    background-color: grey;
-    color: white; 
-  }
-  
-  .Password{
-    background-color: grey;
-    color: white;
-  }
-  
-  .Login-body{
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: calc(10px + 2vmin);
-    color: black;
-    margin-top: 10em;
-    margin-bottom: 10em;
-  }
-  
-  .Login-footer{
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: calc(10px + 2vmin);
-    color: black;
-  }
-  
+}

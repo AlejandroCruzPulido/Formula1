@@ -1,0 +1,39 @@
+.TeamInfo {
+  text-align: center;
+  padding: 20px;
+}
+
+.TeamInfo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.TeamInfo p {
+  margin-top: 10px;
+}
+
+.BackButton {
+  margin-top: 20px;
+}
+
+.BackButton a {
+  text-decoration: none;
+  padding: 10px 15px;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Media Queries */
+@media screen and (max-width: 600px) {
+  .TeamInfo {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .BackButton a {
+    padding: 8px 12px;
+  }
+}

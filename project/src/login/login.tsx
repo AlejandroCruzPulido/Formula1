@@ -15,23 +15,41 @@ function Login() {
     setPassword(e.target.value);
   };
 
+  const validateCredentials = () => {
+    const accountCreated = localStorage.getItem('accountCreated');
+    
+    if (!accountCreated) {
+      setErrorMessage('Debes crear una cuenta en SignUp antes de iniciar sesión.');
+      return false;
+    }
+  
+    const savedEmail = localStorage.getItem('username') || '';
+    const savedPassword = localStorage.getItem('password') || '';
+  
+    if (!email.endsWith('@gmail.com')) {
+      setErrorMessage('El correo electrónico debe terminar en "@gmail.com"');
+      return false;
+    }
+  
+    if (email.trim() !== savedEmail.trim() || password.trim() !== savedPassword.trim()) {
+      setErrorMessage('Credenciales incorrectas. Introduce el correo y la contraseña correctos.');
+      return false;
+    }
+    return true;
+  };
+  
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
-    if (!localStorage.getItem('accountCreated')) {
-      setErrorMessage('Debes crear una cuenta en SignUp antes de iniciar sesión.');
-      return;
+  
+    if (validateCredentials()) {
+      window.location.href = '/main';
     }
+  };
 
-    const savedEmail = localStorage.getItem('username');
-    const savedPassword = localStorage.getItem('password');
-
-    if (email !== savedEmail || password !== savedPassword) {
-      setErrorMessage('Credenciales incorrectas. Introduce el correo y la contraseña correctos.');
-      return;
+  const handleLoginClick = () => {
+    if (validateCredentials()) {
+      window.location.href = '/main';
     }
-
-    window.location.href = '/main';
   };
 
   return (
@@ -59,20 +77,9 @@ function Login() {
         <br></br>
         {errorMessage && <p className="ErrorMessage">{errorMessage}</p>}
         <button
-          type="submit"
+          type="button"
           className="Login-button"
-          onClick={() => {
-            if (!email.endsWith('@gmail.com')) {
-              setErrorMessage('El correo electrónico debe terminar en "@gmail.com"');
-              return;
-            }
-
-            if (password.length < 3) {
-              setErrorMessage('La contraseña debe tener al menos 5 caracteres');
-              return;
-            }
-            window.location.href = '/main';
-          }}
+          onClick={handleLoginClick}
         >
           Login
         </button>

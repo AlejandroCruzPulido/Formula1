@@ -39,13 +39,13 @@ function MyCalendar() {
 
       <footer className="Footer">
         <div className="Main-footer">
-          <a href=" ">
+          <a href="/bets">
             <Cash color={'#FFFFFF'} height="2em" />
           </a>
-          <a href=" ">
+          <a href="/main">
             <Car color={'#FFFFFF'} />
           </a>
-          <a href=" ">
+          <a href="/live">
             <Videocam color={'#FFFFFF'} />
           </a>
           <a href="/account">

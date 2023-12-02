@@ -23,7 +23,7 @@
 
 .Name{
   background-color: grey;
-  color: white; 
+  color: white;   
 }
 
 .SurName{
@@ -67,3 +67,24 @@
   color: black;
 }
 
+/* Media Queries */
+@media screen and (max-width: 600px) {
+  .SignUp-logo {
+    height: 20vmin;
+  }
+
+  .SignUp-header {
+    margin-top: 1em;
+  }
+
+  .SignUp-body {
+    margin-top: 5em;
+    margin-bottom: 5em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .SignUp-logo {
+    height: 15vmin;
+  }
+}

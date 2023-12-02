@@ -5,7 +5,7 @@ import './account.css';
 function Account() {
   const savedName = localStorage.getItem('name') || '';
   const savedSurname = localStorage.getItem('surname') || '';
-  const savedEmail = localStorage.getItem('email') || '';
+  const savedEmail = localStorage.getItem('username') || '';
   const savedPassword = localStorage.getItem('password') || '';
 
   return (
@@ -15,11 +15,11 @@ function Account() {
       </header>
 
       <div className='Account-body'>
-        <img src='' className='Image-account' alt=""/>
-
         <b>Personal Information</b>
+        <br></br>
         <form>
           <label>Name:</label>
+          <br></br>
           <input
             type="text"
             className='Name'
@@ -28,6 +28,7 @@ function Account() {
           />
           <br></br>
           <label>Surname:</label>
+          <br></br>
           <input
             type="text"
             className='Surname'
@@ -36,6 +37,7 @@ function Account() {
           />
           <br></br>
           <label>Email:</label>
+          <br></br>
           <input
             type="text"
             className='Email'
@@ -44,12 +46,14 @@ function Account() {
           />
           <br></br>
           <label>Password:</label>
+          <br></br>
           <input
             type="password"
             className='Password'
             value={savedPassword}
             readOnly
           />
+          <br></br>
           <br></br>
           <a
             className="Logout-link"
@@ -63,7 +67,7 @@ function Account() {
 
       <footer className='Footer' >
         <div className='Main-footer'>
-            <a href=' '>
+            <a href='/bets'>
                 <Cash
                 color={'#FFFFFF'}
                 height="2em"
@@ -74,7 +78,7 @@ function Account() {
                 color={'#FFFFFF'}
                 />
             </a>
-            <a href=' '>
+            <a href='/live'>
                 <Videocam
                 color={'#FFFFFF'}
                 />
