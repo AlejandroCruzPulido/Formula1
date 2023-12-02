@@ -6,14 +6,18 @@
 .TeamInfo img {
   max-width: 100%;
   height: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .TeamInfo p {
   margin-top: 10px;
+  margin-bottom: 10em;
 }
 
 .BackButton {
   margin-top: 20px;
+  margin-bottom: 2em;
 }
 
 .BackButton a {
@@ -25,15 +29,22 @@
   cursor: pointer;
 }
 
-/* Media Queries */
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 600px) {
   .TeamInfo {
     padding: 10px;
+  }
+
+  .TeamInfo img {
+    max-width: 30%; 
   }
 }
 
 @media screen and (max-width: 480px) {
   .BackButton a {
     padding: 8px 12px;
+  }
+
+  .TeamInfo img {
+    max-width: 60%; 
   }
 }

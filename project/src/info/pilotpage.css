@@ -7,13 +7,9 @@
   margin-top: 10px;
 }
 
-.PilotInfo img {
-  max-width: 100%;
-  height: auto;
-}
-
 .BackButton {
-  margin-top: 20px;
+  margin-top: 20em;
+  margin-bottom: 2em;
 }
 
 .BackButton a {
@@ -26,8 +22,7 @@
   cursor: pointer;
 }
 
-/* Media Queries */
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 600px) {
   .PilotInfo {
     padding: 10px;
   }
