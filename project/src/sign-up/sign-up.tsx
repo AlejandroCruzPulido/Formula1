@@ -43,7 +43,7 @@ function SignUp() {
     const errors: string[] = [];
   
     if (password !== repeatPassword) {
-      errors.push('Las contraseñas no coinciden');
+      errors.push('Passwords do not match');
     }
   
     if (errors.length === 0) {

@@ -19,7 +19,7 @@ function Login() {
     const accountCreated = localStorage.getItem('accountCreated');
     
     if (!accountCreated) {
-      setErrorMessage('Debes crear una cuenta en SignUp antes de iniciar sesión.');
+      setErrorMessage('You must create an account on SignUp before logging in.');
       return false;
     }
   
@@ -27,12 +27,12 @@ function Login() {
     const savedPassword = localStorage.getItem('password') || '';
   
     if (!email.endsWith('@gmail.com')) {
-      setErrorMessage('El correo electrónico debe terminar en "@gmail.com"');
+      setErrorMessage('The email must end in "@gmail.com"');
       return false;
     }
   
     if (email.trim() !== savedEmail.trim() || password.trim() !== savedPassword.trim()) {
-      setErrorMessage('Credenciales incorrectas. Introduce el correo y la contraseña correctos.');
+      setErrorMessage('Incorrect credentials. Enter the correct email and password.');
       return false;
     }
     return true;
